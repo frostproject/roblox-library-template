@@ -1,4 +1,5 @@
 --!nocheck
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local library = require(ReplicatedStorage["roblox-library-template"].src.main)
