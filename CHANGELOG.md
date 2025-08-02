@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2025-08-02
+
 ### Added
 
 - Test feature. Initial commit
@@ -15,3 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Nothing!
+
+[unreleased]: https://github.com/frostproject/roblox-library-template/compare/0.0.2...HEAD
+[0.0.2]: https://github.com/frostproject/roblox-library-template/compare/65e90760aa5055c8d8f9d156a20b96c85ba38dfa...0.0.2
