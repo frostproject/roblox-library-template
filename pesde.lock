@@ -3,4 +3,4 @@
 format = 2
 name = "frostproject/roblox_library_template"
 version = "0.0.1"
-target = "luau"
+target = "roblox"
