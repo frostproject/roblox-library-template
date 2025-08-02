@@ -68,6 +68,9 @@ jobs:
         with:
           cache: true
 
+      - name: Upgrade Pesde Binary
+        run: pesde self-upgrade
+
       - name: Install Dependencies
         run: |
           pesde install --prod
