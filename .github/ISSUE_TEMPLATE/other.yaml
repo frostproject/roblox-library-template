@@ -1,0 +1,17 @@
+name: "Other"
+description: "Use this for more complex issues and requests."
+title: "Summarize your report."
+labels: ["evaluating"]
+assignees:
+  - iceeburr
+body:
+  - type: markdown
+    attributes:
+      value: Write anything you want here.
+  - type: textarea
+    attributes:
+      label: "Report"
+      description: "Please describe everything about your issue. Only use template this if you know what you are doing!"
+      placeholder: "Detailed description of your report."
+    validations:
+      required: true

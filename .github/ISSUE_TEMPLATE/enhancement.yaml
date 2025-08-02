@@ -1,0 +1,56 @@
+name: "Enhancement"
+description: "Report any inconsistencies that can be improved."
+title: "Summarize your report."
+labels: ["evaluating", "enhancement"]
+assignees:
+  - iceeburr
+body:
+  - type: markdown
+    attributes:
+      value: Let us know what went wrong and what you want improved.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Please enter an explicit description of your suggestion."
+      placeholder: "Short and explicit description of your suggestion..."
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: "Screenshots & Videos"
+      description: "If applicable, add any media files to help explain your suggestion."
+      placeholder: "https://imgur.com/a/iceeburr-5LJTfgw"
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "Which operating systems are affected?"
+      multiple: true
+      options:
+        - Windows
+        - MacOS
+        - Linux
+        - Other
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Information"
+      description: "Include any additional information about the suggestion."
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      description: "Please try to do all of the checks below."
+      options:
+        - label: "Wrote a valid and explicit description of your enhancement suggestion."
+          required: true
+        - label: "Included screenshots or video material to help explain what you are suggesting."
+          required: false
