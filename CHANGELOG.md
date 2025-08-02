@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `.styluaignore` file
+- `.vscode/extensions.json` file
+
+### Removed
+
+- `wally.toml` file (no idea why it got created in the first place)
+
+### Changed
+
+- Bumped `pesde.lock` version to 0.0.3
+- Added tab sizes in `.vscode/settings.json`
+- Added small whitespace on top of `tests/client/main.client.luau` file
+
 ## [0.0.2] - 2025-08-02
 
 ### Added
