@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "[lua][luau]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "luau-lsp.sourcemap.generatorCommand": "argon sourcemap",
+  "luau-lsp.sourcemap.rojoPath": "argon",
+  "luau-lsp.sourcemap.rojoProjectFile": "default.project.json",
+  "luau-lsp.sourcemap.useVSCodeWatcher": true
+}

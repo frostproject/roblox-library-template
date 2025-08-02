@@ -1,0 +1,22 @@
+{
+  "name": "roblox-library-template",
+  "legacyScripts": false,
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$keepUnknowns": true,
+      "$path": "tests/client",
+      "roblox-library-template": {
+        "$className": "Folder",
+        "src": {
+          "$path": "src"
+        },
+        "roblox_packages": {
+          "$path": {
+            "optional": "roblox_packages"
+          }
+        }
+      }
+    }
+  }
+}

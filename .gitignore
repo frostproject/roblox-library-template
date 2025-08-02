@@ -1,0 +1,89 @@
+# Sourcemap files
+/sourcemap.json
+
+# Packages
+/Packages
+/ServerPackages
+/DevPackages
+/CustomPackages
+/node_modules
+/jspm_packages
+__pycache__/
+/vendor/
+
+# Artifacts
+/*.lock
+/*.rbxl
+/*.rbxlx
+/*.rbxm
+/*.rbxmx
+
+# Required lock files
+!bun.lock
+!pesde.lock
+!package-lock.json
+
+# Misc
+.DS_Store
+[Dd]esktop.ini
+
+# Keep tracking empty folders
+!.gitkeep
+
+# Environmental Variables
+*.env*
+*.venv*
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+!.env.template
+
+# Bytecode Playgrounds
+bytecode.luau
+
+# Compiled Lua sources
+luac.out
+
+# lua Rocks Build Files
+*.src.rock
+*.zip
+*.tar.gz
+
+# Production Builds
+/[Bb]uild
+/[Rr]elease
+
+# Executables
+*.exe
+*.out
+*.app
+*.apk
+*.i*86
+*.x86_64
+*.hex
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic Reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# TypeScript Cache
+*.tsbuildinfo
+
+# Output Of 'npm pack'
+*.tgz
+
+# MKDocs Documentation
+/site
+
+# Lua Type Files
+/globalTypes.d.lua
