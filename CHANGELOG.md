@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] - 2025-08-03
+
 ### Added
 
 - This release mostly adds optional GitHub community files.
@@ -58,6 +60,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing!
 
-[unreleased]: https://github.com/frostproject/roblox-library-template/compare/0.0.3...HEAD
+[unreleased]: https://github.com/frostproject/roblox-library-template/compare/0.0.4...HEAD
+[0.0.4]: https://github.com/frostproject/roblox-library-template/compare/0.0.3...0.0.4
 [0.0.3]: https://github.com/frostproject/roblox-library-template/compare/0.0.2...0.0.3
 [0.0.2]: https://github.com/frostproject/roblox-library-template/compare/303be0d22b813ec7e85ea236a1ffa60bb31b2474...0.0.2
