@@ -10,6 +10,10 @@
 /jspm_packages
 __pycache__/
 /vendor/
+.pesde
+roblox_packages
+luau_packages
+lune_packages
 
 # Artifacts
 /*.lock
