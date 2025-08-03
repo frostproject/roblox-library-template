@@ -105,4 +105,4 @@ While not always enforced, it is recommended to follow the code style guide prov
 
 > 💡 You can also use the [safe-settings](https://github.com/github/safe-settings) tool to automatically apply labels and settings to your repositories—just like we do.
 
-### [⬆️ Back to the top](#roblox-library-template)
+[⬆️ Back to the top](#roblox-library-template)
