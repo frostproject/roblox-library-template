@@ -5,46 +5,49 @@
 [![Publish Release](https://github.com/frostproject/roblox-library-template/actions/workflows/release.yaml/badge.svg)](https://github.com/frostproject/roblox-library-template/actions/workflows/release.yaml)
 [![Community Discord](https://dcbadge.limes.pink/api/server/https://discord.gg/nPVG4fqvxd?style=flat)](https://discord.gg/nPVG4fqvxd)
 
-> 📦 A template for Roblox developers to integrate advanced CLI tools like Rojo or Argon into GitHub workflows, streamlining build, test, and deploy processes for libraries and packages.
+> 📦 A template for Roblox developers to integrate advanced CLI tools like [Argon](https://argon.wiki/) or [Rojo](https://rojo.space/) into GitHub workflows, streamlining build, test, and deploy processes for libraries and packages.
 
-This repository serves as a **starting point** for creating reusable, modular libraries for Roblox or Luau projects. It is designed to work seamlessly with tools like [Argon](https://argon.wiki/) (Rojo), [Pesde](https://pesde.dev).
+This repository serves as a **starting point** for creating reusable, modular libraries for Roblox or Luau projects. It is designed to work seamlessly with tools like [Argon](https://argon.wiki/) (alternative to [Rojo](https://rojo.space/)) and [Pesde](https://pesde.dev).
 
 ## 🚨 Disclaimer
 
 This repository is **intended for educational and template purposes only**.  
-Any code included here is purely for **demonstration** and **showcase**. It is **not production-ready** and should not be used directly in live experiences. This template is still a "work in progress".
+Any code included here is purely for **demonstration** and **showcase**. It is **not production-ready** and should not be used directly in live experiences. This template is still a _"work in progress"_.
 
 ## 🚀 Usage
 
-### 📦 As a Dependency
+### 📦 Use as a Template
 
-To use your library in your own project, simply add it as a dependency using pesde:
+> This is the recommended way to start your own project with this template.
 
-```sh
-pesde add frostproject/roblox_library_template
-```
+1. Simply click **[here](https://github.com/new?template_name=roblox-library-template&template_owner=frostproject)**, create your repository on GitHub and then clone it locally.
 
-### 🧪 For Development
-
-To work directly with this template (e.g., for customization or contribution):
-
-**Clone the repository:**
-
-```sh
-git clone https://github.com/frostproject/roblox-library-template
-cd roblox-library-template
-```
-
-**Install the required tools:**
+2. **Make sure that you have [Rokit](https://github.com/rojo-rbx/rokit) installed!** Finally, download all of the required tools:
 
 ```sh
 rokit install
-pesde install
 ```
 
-This will set up everything you need to begin development.
+3. You are now ready to start cooking some code! Remember to use:
+
+- `rokit` for your toolchain (CLI tools, utilities)
+- `pesde` for your packages, libraries, scripts and dependencies
+- `argon` or `rojo` for code syncing between your favorite editor and Roblox Studio
+- `luau-lsp` for auto-completion, linting and typechecking
+- `stylua` for code formatting and styling
+
+4. Optionally you should check out other popular tools like:
+
+- [Moonwave](https://github.com/evaera/moonwave) - tool for generating documentation from comments in Lua source code
+- [Blink](https://1axen.github.io/blink) - an IDL compiler written in Luau for Roblox buffer networking
+- [Lune](https://lune-org.github.io/docs/) - standalone Luau runtime similar to runtimes for other languages such as Node, Deno, Bun, or Luvit for vanilla Lua
+- [darklua](https://github.com/seaofvoices/darklua) - CLI tool that transforms Lua 5.1 and Roblox Luau code using configurable rules
 
 > ⚠️ Note: You are expected to have a basic understanding of Luau development, Roblox tooling, and dependency management. Using this template without that knowledge is discouraged and considered bad practice.
+
+### 🧪 For Development and Contribution
+
+Please read [CONTRIBUTING.md](.github/CONTRIBUTING.md) guide if you want to contribute improvements to the template itself or forking it for personal use without starting a fresh project.
 
 ## 📦 Publishing & Maintenance
 
@@ -53,7 +56,7 @@ This template includes GitHub Actions workflows for automated publishing to the 
 ### 📝 Steps to Publish a New Version
 
 1. Make your changes, implement and commit them as usual.
-2. Update the CHANGELOG.md Follow the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format. It’s simple and helps consumers understand what changed.
+2. Update the [CHANGELOG.md](CHANGELOG.md) Follow the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format. It’s simple and helps consumers understand what changed.
 3. Commit your changes
 
 ```sh
@@ -64,7 +67,7 @@ git push
 
 Now it's time to create and push a version tag. This will automatically trigger the workflow to:
 
-- Update pesde.toml
+- Update [pesde.toml](pesde.toml)
 - Build and package the release
 - Publish it to the registry
 
@@ -75,11 +78,17 @@ git push origin 1.2.3
 
 🔥 You’re done! A new release will be created and published automatically.
 
+To use your library in your own project, simply add it as a dependency using pesde:
+
+```sh
+pesde add frostproject/roblox_library_template
+```
+
 ## ⚠️ Important Notes
 
-> Never manually edit `pesde.toml`’s version field. This is handled by the workflow. Manually changing it can break the automated publishing process. The only exception is if you're completely opting out of the workflow and managing releases manually. Please, don't put a "v" in the tag name, for example - `v1.2.3`. This might break the workflow as it doesn't follow [semantic versioning](https://semver.org). It is fine to put it in the commit message, though.
+> Never manually edit [pesde.toml](pesde.toml)’s version field. This is handled by the workflow. Manually changing it can break the automated publishing process. The only exception is if you're completely opting out of the workflow and managing releases manually. Please, don't put a "v" in the tag name, for example - `v1.2.3`. This might break the workflow as it doesn't follow [semantic versioning](https://semver.org). It is fine to put it in the commit message, though.
 
-> It’s safe and advised to regularly update `pesde.lock`. You may bump dependencies and commit those changes. It is discouraged to modify the file manually. Please use `pesde update` for that regard.
+> It’s safe and advised to regularly update [pesde.lock](pesde.lock). You may bump dependencies and commit those changes. It is discouraged to modify the file manually. Please use `pesde update` for that regard.
 
 > To enable the GitHub workflow for automated publishing to the pesde registry, you must add `PESDE_TOKEN` as a repository secret or organization secret. To obtain it, please use `pesde auth login` and then `pesde auth token`. More information [here](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets).
 
@@ -90,6 +99,10 @@ If you’re new to package or repository maintenance, we've prepared a simple gu
 **[👉 Maintainer's Cook Book](https://discord.gg/nPVG4fqvxd) (WORK IN PROGRESS)**<br>
 _Covers the basics of semver, commits, triaging, dependency bumps, tagging, and more. While we're still cooking it up for you, feel free to reach out via Discord DMs if you need help: `iceeburr`_
 
-By using this template, you're also copying over several Markdown files and GitHub specific files (e.g., `LICENSE.md`, `SUPPORT.md`, `SECURITY.md`, `CODEOWNERS` etc.) that contain project-specific text and references. You are responsible for reviewing and updating these files to reflect your own project's name, license, contacts, and details.
+By using this template, you're also copying over several Markdown files and GitHub specific files (e.g., [LICENSE.md](LICENSE), [SUPPORT.md](.github/SUPPORT.md), [SECURITY.md](.github/SECURITY.md), [CODEOWNERS](.github/CODEOWNERS) etc.) that contain project-specific text and references. You are responsible for reviewing and updating these files to reflect your own project's name, license, contacts, and details.
+
+While not always enforced, it is recommended to follow the code style guide provided. As this is only a template repository, we can only suggest you what to use. The boilerplate code we have follows the official [Roblox Lua style guide](https://roblox.github.io/lua-style-guide/) and the [Lua Rocks style guide](https://github.com/luarocks/lua-style-guide). We use 3 tab spaces for indentation and a few other cool settings by default. All of that is up to your own preference and has no real meaning. You can configure them in the [stylua.toml](stylua.toml)
 
 > 💡 You can also use the [safe-settings](https://github.com/github/safe-settings) tool to automatically apply labels and settings to your repositories—just like we do.
+
+### [⬆️ Back to the top](#roblox-library-template)

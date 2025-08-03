@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- `README.md` improvements. Added more information in the Maintainer's Guide.
+- `README.md` improvements. Added more information in the Maintainer's Guide and styling
+- `.github/CONTRIBUTING.md` improved styling
 
 ### Removed
 
