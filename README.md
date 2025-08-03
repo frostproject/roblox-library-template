@@ -31,7 +31,7 @@ To work directly with this template (e.g., for customization or contribution):
 **Clone the repository:**
 
 ```sh
-git clone https://github.com/frostproject/roblox-library-template.git
+git clone https://github.com/frostproject/roblox-library-template
 cd roblox-library-template
 ```
 
@@ -89,3 +89,7 @@ If you’re new to package or repository maintenance, we've prepared a simple gu
 
 **[👉 Maintainer's Cook Book](https://discord.gg/nPVG4fqvxd) (WORK IN PROGRESS)**<br>
 _Covers the basics of semver, commits, triaging, dependency bumps, tagging, and more. While we're still cooking it up for you, feel free to reach out via Discord DMs if you need help: `iceeburr`_
+
+By using this template, you're also copying over several Markdown files and GitHub specific files (e.g., `LICENSE.md`, `SUPPORT.md`, `SECURITY.md`, `CODEOWNERS` etc.) that contain project-specific text and references. You are responsible for reviewing and updating these files to reflect your own project's name, license, contacts, and details.
+
+> 💡 You can also use the [safe-settings](https://github.com/github/safe-settings) tool to automatically apply labels and settings to your repositories—just like we do.

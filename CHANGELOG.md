@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- `README.md` improvements. Added more information in the Maintainer's Guide.
+
 ### Removed
 
 - `.github/settings.yml` file in favor of [safe-settings](https://github.com/github/safe-settings)
