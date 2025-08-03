@@ -1,6 +1,6 @@
 name = "frostproject/roblox_library_template"
 description = "A template for Roblox developers to integrate advanced CLI tools like Argon or Rojo into GitHub workflows, streamlining build, test, and deploy processes for libraries and packages."
-version = "0.0.4"
+version = "0.0.5"
 authors = ["iceeburr <iceeburr@gmail.com> (https://iceeburr.dev)"]
 repository = "https://github.com/frostproject/roblox-library-template"
 license = "MIT"
