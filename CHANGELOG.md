@@ -9,6 +9,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- This release mostly adds optional GitHub community files.
+- `.github/workflows/stale.yaml` file
+- `.github/settings.yml` file for repository-settings GitHub Application
+- `.github/CODEOWNERS` file
+- `.github/CODE_OF_CONDUCT.md` file
+- `.github/PULL_REQUEST_TEMPLATE.md` file
+- `.github/SUPPORT.md` file
+- `.github/SECURITY.md` file
+- `.github/dependabot.yaml` file
+- `.github/GOVERNANCE.md` file
+- `.github/CONTRIBUTING.md` file
+- `.github/ISSUE_TEMPLATE`s
+
+### Changed
+
+- Improved `README.md`
+
+### Fixed
+
+- The previous release didn't automatically bump `pesde.toml` because it was manually edited. This caused the `CHANGELOG.md` file to fail as well.
+
+## [0.0.2] - 2025-08-03
+
+### Added
+
 - `.styluaignore` file
 - `.vscode/extensions.json` file
 
@@ -33,5 +58,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing!
 
-[unreleased]: https://github.com/frostproject/roblox-library-template/compare/0.0.2...HEAD
+[unreleased]: https://github.com/frostproject/roblox-library-template/compare/0.0.3...HEAD
+[0.0.3]: https://github.com/frostproject/roblox-library-template/compare/0.0.2...0.0.3
 [0.0.2]: https://github.com/frostproject/roblox-library-template/compare/303be0d22b813ec7e85ea236a1ffa60bb31b2474...0.0.2
