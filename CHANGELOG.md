@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Argon sync support with [scripts_argon](https://github.com/frostproject/scripts-argon) by @iceeburr
+
+### Changed
+
+- `README.md` improved readability
+
 ## [0.0.5] - 2025-08-03
 
 ### Changed

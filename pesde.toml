@@ -11,5 +11,13 @@ environment = "roblox"
 lib = "src/main.luau"
 build_files = ["src"]
 
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts_argon/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts_argon/sourcemap_generator.luau"
+
 [indices]
 default = "https://github.com/pesde-pkg/index"
+
+[dev_dependencies]
+scripts_argon = { name = "frostproject/scripts_argon", version = "^0.0.2", target = "lune" }
+argon = { name = "pesde/argon", version = "^2.0.25", target = "lune" }
