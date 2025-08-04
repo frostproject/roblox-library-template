@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- `README.md` improved readability
+- `README.md` improved readability. Changed default target to roblox for pesde shield badge
 
 ## [0.0.5] - 2025-08-03
 
