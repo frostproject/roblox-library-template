@@ -19,18 +19,18 @@ stylua = [{ name = "pesde/stylua", version = "=2.0.2", index = "https://github.c
 ref_ty = "pesde"
 index_url = "https://github.com/daimond113/pesde-index"
 
-[graph."frostproject/scripts_argon@0.0.1 lune"]
-direct = ["scripts_argon", { name = "frostproject/scripts_argon", version = "^0.0.1", index = "default", target = "lune" }, "dev"]
+[graph."frostproject/scripts_argon@0.0.3 lune"]
+direct = ["scripts_argon", { name = "frostproject/scripts_argon", version = "^0.0.3", index = "default", target = "lune" }, "dev"]
 
-[graph."frostproject/scripts_argon@0.0.1 lune".dependencies]
+[graph."frostproject/scripts_argon@0.0.3 lune".dependencies]
 argon = ["pesde/argon@2.0.25 lune", "peer"]
 scripts_core = ["pesde/scripts_core@0.0.3 lune", "standard"]
 
-[graph."frostproject/scripts_argon@0.0.1 lune".pkg_ref]
+[graph."frostproject/scripts_argon@0.0.3 lune".pkg_ref]
 ref_ty = "pesde"
 index_url = "https://github.com/pesde-pkg/index"
 
-[graph."frostproject/scripts_argon@0.0.1 lune".pkg_ref.dependencies]
+[graph."frostproject/scripts_argon@0.0.3 lune".pkg_ref.dependencies]
 argon = [{ name = "pesde/argon", version = "^2.0.25", index = "https://github.com/pesde-pkg/index" }, "peer"]
 scripts_core = [{ name = "pesde/scripts_core", version = "^0.0.3", index = "https://github.com/pesde-pkg/index", target = "lune" }, "standard"]
 
@@ -84,6 +84,9 @@ index_url = "https://github.com/pesde-pkg/index"
 [graph."lukadev_0/result@1.2.0 lune".pkg_ref]
 ref_ty = "pesde"
 index_url = "https://github.com/pesde-pkg/index"
+
+[graph."pesde/argon@2.0.25 lune"]
+direct = ["argon", { name = "pesde/argon", version = "^2.0.25", index = "default", target = "lune" }, "dev"]
 
 [graph."pesde/argon@2.0.25 lune".dependencies]
 core = ["pesde/toolchainlib@0.1.15 lune", "standard"]
