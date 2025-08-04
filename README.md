@@ -20,15 +20,15 @@ Any code included here is purely for **demonstration** and **showcase**. It is *
 
 > This is the recommended way to start your own project with this template.
 
-1. Simply click **[here](https://github.com/new?template_name=roblox-library-template&template_owner=frostproject)**, create your repository on GitHub and then clone it locally.
+### 1. Simply click **[here](https://github.com/new?template_name=roblox-library-template&template_owner=frostproject)**, create your repository on GitHub and then clone it locally.
 
-2. **Make sure that you have [Rokit](https://github.com/rojo-rbx/rokit) installed!** Finally, download all of the required tools:
+### 2. **Make sure that you have [Rokit](https://github.com/rojo-rbx/rokit) installed!** Finally, download all of the required tools:
 
 ```sh
 rokit install
 ```
 
-3. You are now ready to start cooking some code! Remember to use:
+### 3. You are now ready to start cooking some code! Remember to use:
 
 - `rokit` for your toolchain (CLI tools, utilities)
 - `pesde` for your packages, libraries, scripts and dependencies
@@ -36,7 +36,7 @@ rokit install
 - `luau-lsp` for auto-completion, linting and typechecking
 - `stylua` for code formatting and styling
 
-4. Optionally you should check out other popular tools like:
+### 4. Optionally you should check out other popular tools like:
 
 - [Moonwave](https://github.com/evaera/moonwave) - tool for generating documentation from comments in Lua source code
 - [Blink](https://1axen.github.io/blink) - an IDL compiler written in Luau for Roblox buffer networking
@@ -55,9 +55,11 @@ This template includes GitHub Actions workflows for automated publishing to the 
 
 ### 📝 Steps to Publish a New Version
 
-1. Make your changes, implement and commit them as usual.
-2. Update the [CHANGELOG.md](CHANGELOG.md) Follow the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format. It’s simple and helps consumers understand what changed.
-3. Commit your changes
+### 1. Make your changes, implement and commit them as usual.
+
+### 2. Update the [CHANGELOG.md](CHANGELOG.md) Follow the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format. It’s simple and helps consumers understand what changed.
+
+### 3. Commit your changes
 
 ```sh
 git add .
@@ -65,7 +67,7 @@ git commit -m "feat: Add amazing new feature"
 git push
 ```
 
-Now it's time to create and push a version tag. This will automatically trigger the workflow to:
+### 4. Now it's time to create and push a version tag. This will automatically trigger the workflow to:
 
 - Update [pesde.toml](pesde.toml)
 - Build and package the release
