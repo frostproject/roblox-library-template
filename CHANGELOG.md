@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.6] - 2025-08-04
+
 ### Added
 
 - Argon sync support with [scripts_argon](https://github.com/frostproject/scripts-argon) by @iceeburr
@@ -79,7 +81,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing!
 
-[unreleased]: https://github.com/frostproject/roblox-library-template/compare/0.0.5...HEAD
+[unreleased]: https://github.com/frostproject/roblox-library-template/compare/0.0.6...HEAD
+[0.0.6]: https://github.com/frostproject/roblox-library-template/compare/0.0.5...0.0.6
 [0.0.5]: https://github.com/frostproject/roblox-library-template/compare/0.0.4...0.0.5
 [0.0.4]: https://github.com/frostproject/roblox-library-template/compare/0.0.3...0.0.4
 [0.0.3]: https://github.com/frostproject/roblox-library-template/compare/0.0.2...0.0.3
